@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link rel="stylesheet" href="stylesp.css">
+</head>
+<body>
+
+<div class="detail-container">
+  <div class="image-column">
+    <div class="slider-container">
+     <div class="slider">
+        <img class="slide" src="pH1.png" alt="Product Image 1">
+        <img class="slide" src="pH2.png" alt="Product Image 2">
+    </div>
+	 <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+         <button class="next" onclick="changeSlide(1)">&#10095;</button>
+   </div>
+</div>
+    <div class="detail-info">
+        <h1>IoT Sensor</h1>
+	 <p class="product-description"><B>Definition:</B>Our pH Sensor is an advanced analytical device designed to measure the hydrogen-ion activity in soil, determining its acidity or alkalinity. Featuring a pH-sensitive electrode, this sensor produces a voltage proportional to the soil's pH level, providing precise readings.<br><br>
+<B>Use:</B>: By measuring soil acidity or alkalinity, the pH Sensor helps farmers accurately apply the right amount of lime or sulfur to adjust soil pH. This ensures optimal conditions for crop growth and helps in maintaining soil health. <br><br>
+<B>Significance:</B>Soil pH influences nutrient availability and overall soil health. In acidic soils, essential nutrients like phosphorus may become less available, while toxic elements can harm plant roots. By effectively managing soil pH with our sensor, farmers can enhance crop growth, improve yield, and promote better soil management.
+</p>
+        <p class="product-price">
+	<sup class="price-superscript">Rs</sup>899  (-70%)
+	<sub class="price-subscript">M.R.P.:Rs2,999</sub><br>
+	Inclusive of all taxes<br>
+	EMI starts at Rs312 per month</p>
+       <ul class="product-features">
+            <li>Brand: Real Instruments</li>
+            <li>Material: Metals</li>
+            <li>Size: 3.2x1.4 </li>
+            <li>Manufactured-In: India</li>
+        </ul>
+        <button class="add-to-cart-btn" onclick="addToCart()">Add to Cart</button>
+    </div>
+</div>
+
+<script src="scriptp.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Out - Agro Tech</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .signout-container {
+            text-align: center;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #0056b3;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: #003d80;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="signout-container">
+        <h2>You have been signed out.</h2>
+        <button onclick="goToHome()">Go to Home</button>
+    </div>
+
+    <script>
+        function goToHome() {
+            window.location.href = "index.html";         }
+    </script>
+</body>
+
+</html>

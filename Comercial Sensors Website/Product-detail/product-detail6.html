@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link rel="stylesheet" href="stylesp.css">
+</head>
+<body>
+
+<div class="detail-container">
+  <div class="image-column">
+    <div class="slider-container">
+     <div class="slider">
+        <img class="slide" src="Nutrient1.png" alt="Product Image 1">
+        <img class="slide" src="Nutrient2.png" alt="Product Image 2">
+    </div>
+	 <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+         <button class="next" onclick="changeSlide(1)">&#10095;</button>
+   </div>
+</div>
+    <div class="detail-info">
+        <h1>Nutrient Sensor</h1>
+	 <p class="product-description"><B>Definition:</B>Our Nutrient Sensor detects the concentration of essential nutrients such as nitrogen (N), phosphorus (P), and potassium (K) in the soil. Utilizing ion-selective electrodes or optical sensors, it provides accurate readings of nutrient levels. <br><br>
+<B>Use:</B> This sensor offers real-time data on nutrient concentrations, allowing farmers to apply fertilizers more precisely according to actual crop needs.<br><br>
+<B>Significance:</B> Optimizing fertilizer application is vital to prevent nutrient runoff and environmental pollution while reducing costs. Our Nutrient Sensor ensures crops receive the right nutrients at the right time, leading to improved productivity and minimized environmental impact.
+</p>
+        <p class="product-price">
+	<sup class="price-superscript">Rs</sup>899  (-70%)
+	<sub class="price-subscript">M.R.P.:Rs2,999</sub><br>
+	Inclusive of all taxes<br>
+	EMI starts at Rs312 per month</p>
+       <ul class="product-features">
+            <li>Brand: Real Instruments</li>
+            <li>Material: Metals</li>
+            <li>Size: 3.2x1.4 </li>
+            <li>Manufactured-In: India</li>
+        </ul>
+        <button class="add-to-cart-btn" onclick="addToCart()">Add to Cart</button>
+    </div>
+</div>
+
+<script src="scriptp.js"></script>
+</body>
+</html>

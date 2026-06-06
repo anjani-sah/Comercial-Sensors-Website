@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link rel="stylesheet" href="stylesp.css">
+</head>
+<body>
+
+<div class="detail-container">
+  <div class="image-column">
+    <div class="slider-container">
+     <div class="slider">
+        <img class="slide" src="IoT1.png" alt="Product Image 1">
+        <img class="slide" src="IoT2.png" alt="Product Image 2">
+    </div>
+	 <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+         <button class="next" onclick="changeSlide(1)">&#10095;</button>
+   </div>
+</div>
+    <div class="detail-info">
+        <h1>pH Sensor</h1>
+	 <p class="product-description"><B>Definition:</B> Our Soil Moisture Sensor is an advanced electronic device designed to measure the volumetric water content in the soil. It utilizes methods such as electrical resistance, dielectric constant, or neutron interaction to provide accurate moisture readings.<br><br>
+<B>Use:</B> This sensor monitors soil water content in real-time, facilitating efficient irrigation management. By ensuring that crops receive the precise amount of water needed, it helps reduce water wastage and enhances crop health and yield.<br><br>
+<B>Significance:</B> Effective irrigation is crucial for avoiding the detrimental effects of both overwatering and underwatering. Our Soil Moisture Sensor allows for precise irrigation control, optimizing water use, particularly in drought-prone areas. It also helps prevent soil erosion and nutrient leaching caused by excessive watering, promoting sustainable and productive farming practices.
+</p>
+        <p class="product-price">
+	<sup class="price-superscript">Rs</sup>899  (-70%)
+	<sub class="price-subscript">M.R.P.:Rs2,999</sub><br>
+	Inclusive of all taxes<br>
+	EMI starts at Rs312 per month</p>
+       <ul class="product-features">
+            <li>Brand: Real Instruments</li>
+            <li>Material: Metals</li>
+            <li>Size: 3.2x1.4 </li>
+            <li>Manufactured-In: India</li>
+        </ul>
+        <button class="add-to-cart-btn" onclick="addToCart()">Add to Cart</button>
+    </div>
+</div>
+
+<script src="scriptp.js"></script>
+</body>
+</html>

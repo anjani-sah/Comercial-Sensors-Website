@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro Tech</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f0f5;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .navbar {
+            background-color: #cce5ff;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            z-index: 10;
+            position: relative;
+        }
+
+        .logo {
+            height: 50px;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+            font-size: 18px;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        .auth-buttons {
+            display: flex;
+            align-items: center;
+        }
+
+        .auth-buttons button {
+            background-color: white;
+            border: none;
+            color: black;
+            padding: 10px 20px;
+            margin-left: 15px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+
+        .auth-buttons button:hover {
+            background-color: #0056b3;
+            color: white;
+        }
+
+        .cart-button {
+            background-color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .cart-button img {
+            width: 24px;
+            height: 24px;
+            margin-right: 5px;
+        }
+
+        .cart-button:hover {
+            background-color: #0056b3;
+            color: white;
+        }
+
+        .hero-section {
+            position: relative;
+            text-align: center;
+            padding: 50px 20px;
+            color: #fff;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            z-index: 2;
+        }
+
+        .hero-section::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.3);
+            z-index: 1;
+        }
+
+        .hero-section h1,
+        .hero-section p {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-section h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .hero-section p {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        .background-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 0;
+            filter: brightness(0.7);
+        }
+
+        .icon-menu {
+            display: flex;
+            justify-content: center;
+            padding: 30px 20px;
+            background-color: #f7f7f7;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .icon-menu div {
+            margin: 0 20px;
+            text-align: center;
+        }
+
+        .icon-menu img {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 10px;
+        }
+
+        .icon-menu p {
+            font-size: 16px;
+            color: #333;
+        }
+
+        .icon-menu p.title {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <img src="Mini-Images/Logo.png" alt="Agro Tech Logo" class="logo">
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="product.html">Product</a>
+            <a href="page1installation.html">Installation</a>
+            <a href="about.html">About Us</a>
+            <a href="contactus.html">Contacts</a>
+        </div>
+        <div class="auth-buttons">
+            <!-- Sign In -->
+            <button onclick="location.href='signin.html'">Sign In</button>
+            <!-- Sign Out -->
+            <button onclick="location.href='signout.html'">Sign Out</button>
+            <!-- Cart Button -->
+            <button class="cart-button" onclick="location.href='cart.html'">
+                <img src="Mini-Images/cart-icon.png" alt="Cart Icon">
+                Add to Cart
+            </button>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <video class="background-video" autoplay muted loop>
+            <source src="Mini-Images/Background.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <h1>Agro Tech</h1>
+        <p>Revolutionize Your Farming with Cutting-Edge Sensors and Smart Technology! Unlock the full potential of your agricultural operations with our advanced sensor solutions and state-of-the-art drones. From precise soil analysis to real-time climate monitoring, our products are designed to optimize every aspect of your farm. Experience the future of agriculture today and transform your productivity with technology that delivers results.</p>
+    </div>
+
+    <!-- Icon Menu -->
+    <div class="icon-menu">
+        <div>
+            <img src="Mini-Images/Home.png" alt="Home Icon">
+            <p class="title">Home</p>
+        </div>
+        <div>
+            <img src="Mini-Images/Installation.png" alt="Installation Icon">
+            <p class="title">Installation</p>
+        </div>
+        <div>
+            <img src="Mini-Images/Product.png" alt="Product Icon">
+            <p class="title">Product</p>
+        </div>
+        <div>
+            <img src="Mini-Images/About us.png" alt="About Us Icon">
+            <p class="title">About Us</p>
+        </div>
+        <div>
+            <img src="Mini-Images/Contacts.png" alt="Contacts Icon">
+            <p class="title">Contacts</p>
+        </div>
+    </div>
+
+    <script>
+        function signIn() {
+            location.href = 'signin.html';
+        }
+
+        function signOut() {
+            location.href = 'signout.html';
+        }
+    </script>
+</body>
+
+</html>

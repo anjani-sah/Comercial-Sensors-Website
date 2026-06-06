@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product list</title>
+    <link rel="stylesheet" href="product.css">
+    <script src="product.js" defer></script>
+
+</head>
+
+<body>
+    <div class="navbar">
+        <img src="Mini-Images/Logo.png" alt="Agro Tech Logo" class="logo">
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+		<div class="nav-item-dropdown">
+    <a href="Product.html" class="nav-item" id="product-link">Product</a>
+    <!-- Dropdown Sub-navbar for Product -->
+    <div class="dropdown-content" id="dropdown-menu">
+        <a href="product-database.php">Product Database</a>
+    </div>
+</div>
+
+
+            <a href="page1installation.html">Installation</a>
+            <a href="about.html">About Us</a>
+            <a href="contactus.html">Contacts</a>
+        </div>
+        <div class="auth-buttons">
+            <button onclick="signIn()">Sign In</button>
+            <button onclick="signOut()">Sign Out</button>
+        </div>
+    </div>
+    <header>
+        <h1>Agro sensors</h1>
+        <p>Discover high-performance sensors for Agriculture.</p>
+        <div class="filters">
+            <label for="filter">Filter by Type:</label>
+            <select id="filter">
+                <option value="all">All Sensors</option>
+                <option value="iot">IoT Sensors</option>
+                <option value="electronic">Electronic Sensors</option>
+                <option value="drone">Drone Sensors</option>
+            </select>
+        </div>
+    </header>
+    <main>
+        <section class="products">
+            <div class="product">
+                <div class="image-slider">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMA3Fa__PVcELlJ7lSAc8N3cxMqWClwHVUag&s"
+                        alt="Moisture Sensor Image 1" class="image-slide">
+                    <img src="https://robu.in/wp-content/uploads/2021/08/17731-SparkFun_Qwiic_Soil_Moisture_Sensor-01.jpg"
+                        alt="Moisture Sensor Image 2" class="image-slide">
+                </div>
+                <h2> Soil Moisture Sensor</h2>
+                <p>Iot based sensor for moisture calculation.</p>
+                <div class="price">Price: ₹700</div>
+                <button class="add-to-cart". href='cart1.html>Add to Cart</button>
+            </div>
+        </section>
+        <section class="products">
+            <div class="product">
+                <div class="image-slider">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl_wzVmfve3CZARN0LkggWRbHRX3BJqd0FIw&s"
+                        alt="Leaf Wetness Sensor Image 1" class="image-slide">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmoumyMhbhwfqqYzdybuwjFGSWeKkTC6bDUA&s"
+                        alt="Leaf Wetness Image 2" class="image-slide">
+                </div>
+                <h2>Leaf Wetness Sensors</h2>
+                <p>Iot based sensor for leaf wetness calculation.</p>
+                <div class="price">Price: ₹750</div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </section>
+        <section class="products">
+            <div class="product">
+                <div class="image-slider">8A7XNH8JsAvio1jnZgKmc3GJ72S
+                    <img src="https://5.imimg.com/data5/JB/SG/ER/SELLER-38701987/temperature-sensor-500x500.jpg"
+                        alt="Temperature Sensor Image 1" class="image-slide">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTA2AHpK5TAVtIcB2PBg3obKmWaVljiiNHUFw&s"
+                        alt="Temperature Sensor Image 2" class="image-slide">
+                </div>
+                <h2>Soil Temperature Sensors</h2>
+                <p>Iot based sensor for temperature calculation.</p>
+                <div class="price">Price: ₹800</div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </section>
+        <section class="products">
+            <div class="product">
+                <div class="image-slider">
+                    <img src="https://www.renkeer.com/wp-content/uploads/2021/06/weather-station-3.jpg"
+                        alt="Temperature Sensor Image 1" class="image-slide">
+                    <img src="https://www.renkeer.com/wp-content/uploads/2021/06/agricultural-weather-station-1.jpg"
+                        alt="Temperature Sensor Image 2" class="image-slide">
+                </div>
+                <h2>Weather Stations</h2>
+                <p>Iot based sensor for getting environmental data.</p>
+                <div class="price">Price: ₹1500</div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </section>
+        <section class="products">
+            <div class="product">
+                <div class="image-slider">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcPGlbokcihSfwQm30a05I_53I3Rb_5CEadw&s"
+                        alt="Temperature Sensor Image 1" class="image-slide">
+                    <img src="https://www.renkeer.com/wp-content/uploads/2021/06/soil-npk-meter.jpg"
+                        alt="Temperature Sensor Image 2" class="image-slide">
+                </div>
+                <h2>Nutrient Sensors</h2>
+                <p>Iot based sensor for soil management.</p>
+                <div class="price">Price: ₹300</div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </section>
+        <section class="products">
+            <div class="product">
+                <div class="image-slider">
+                    <img src="https://5.imimg.com/data5/ECOM/Default/2023/1/EL/MP/IS/137491030/hccf768c5dd104c00a40ea1b31a2631bce-250x250.jpg"
+                        alt="Temperature Sensor Image 1" class="image-slide">
+                    <img src="https://5.imimg.com/data5/XP/SB/MY-1833510/sharp-optical-dust-sensor-gp2y1010au0f-250x250.jpg"
+                        alt="Temperature Sensor Image 2" class="image-slide">
+                </div>
+                <h2>Optical Sensors</h2>
+                <p>Iot based sensor act as health scanner.</p>
+                <div class="price">Price: ₹830</div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </section>
+        <section class="products">
+            <div class="product">
+                <div class="image-slider">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxaBtcmgLhsC9TtvZtj6VlCwH2l3s4_Wdqdg&s"
+                        alt="Temperature Sensor Image 1" class="image-slide">
+                    <img src="https://agriculturepost.com/wp-content/uploads/2018/08/7-benefits-of-Remote-Sensing-GIS-in-agriculture.jpg"
+                        alt="Temperature Sensor Image 2" class="image-slide">
+                </div>
+                <h2>Remote Sensing Sensors</h2>
+                <p>Iot based sensor that act as eye view of field.</p>
+                <div class="price">Price: ₹1000</div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </section>
+        <section class="products">
+            <div class="product">
+                <div class="image-slider">
+                    <img src="https://s.alicdn.com/@sc04/kf/HTB11e.Tax2rK1RkSnhJq6ykdpXaW.jpg_300x300.jpg"
+                        alt="Temperature Sensor Image 1" class="image-slide">
+                    <img src="https://i0.wp.com/iotdepot.io/wp-content/uploads/2021/10/smart-room-sensor-3.png?fit=1000%2C1000&ssl=1"
+                        alt="Temperature Sensor Image 2" class="image-slide">
+                </div>
+                <h2>Potentiometric Sensors</h2>
+                <p>Electronic based sensor that measure electrical potential.</p>
+                <div class="price">Price: ₹1220</div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </section>
+        <section class="products">
+            <div class="product">
+                <div class="image-slider">
+                    <img src="https://electroncart.in/wp-content/uploads/2022/05/Voltage_Detection_Sensor_Module_0-25V_DC1.jpg"
+                        alt="Temperature Sensor Image 1" class="image-slide">
+                    <img src="https://m.media-amazon.com/images/I/51cG23bCMcL._AC_UF350,350_QL50_.jpg"
+                        alt="Temperature Sensor Image 2" class="image-slide">
+                </div>
+                <h2>Voltammetric Sensors</h2>
+                <p>Electronic based sensor that measure electrical current.</p>
+                <div class="price">Price: ₹1400</div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </section>
+        <section class="products">
+            <div class="product">
+                <div class="image-slider">
+                    <img src="https://5.imimg.com/data5/AO/KE/MV/SELLER-68847315/field-effect-transistor.jpg"
+                        alt="Temperature Sensor Image 1" class="image-slide">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQv9cRE_iHReGYqqQKysT4GDsDf8udH3vXGVWxAlqWAryGVSyEtSZXPsAeIJxg_vLccwPs&usqp=CAU"
+                        alt="Temperature Sensor Image 2" class="image-slide">
+                </div>
+                <h2>FET Sensors</h2>
+                <p>Electronic based sensor that measure voltage regulators.</p>
+                <div class="price">Price: ₹550</div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </section>
+        <section class="products">
+            <div class="product">
+                <div class="image-slider">
+                    <img src="https://www.mt.com/images/WebShop/MainImage/51344700.jpg" alt="Temperature Sensor Image 1"
+                        class="image-slide">
+                    <img src="https://5.imimg.com/data5/SELLER/Default/2022/9/KA/QD/GN/613318/ion-selective-electrodes.jpg"
+                        alt="Temperature Sensor Image 2" class="image-slide">
+                </div>
+                <h2>ISEs Sensors</h2>
+                <p>Electronic based sensor that measure nutrient analysis.</p>
+                <div class="price">Price: ₹608</div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </section>
+        <section class="products">
+            <div class="product">
+                <div class="image-slider">
+                    <img src="https://4.imimg.com/data4/DY/AC/MY-9872252/fiber-optic-sensor-500x500.jpg"
+                        alt="Temperature Sensor Image 1" class="image-slide">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUA5B_CUTzH3jflypUV_Po9nvSDGSiS23jqw&s"
+                        alt="Temperature Sensor Image 2" class="image-slide">
+                </div>
+                <h2>Optical Fibre Sensors</h2>
+                <p>Electronic based sensor that measure nutrient secret through light.</p>
+                <div class="price">Price: ₹770</div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </section>
+        <section class="products">
+            <div class="product">
+                <div class="image-slider">
+                    <img src="https://5.imimg.com/data5/YQ/BS/GLADMIN-23108818/gy-31-tcs230-colour-sensor-500x500.png"
+                        alt="Temperature Sensor Image 1" class="image-slide">
+                    <img src="https://5.imimg.com/data5/SELLER/Default/2024/7/438902623/JK/BG/JL/1225448/color-sensor-tcs230-500x500.jpg"
+                        alt="Temperature Sensor Image 2" class="image-slide">
+                </div>
+                <h2>Colorimetric Sensors</h2>
+                <p>Electronic based sensor that detect nutrients by changing hues</p>
+                <div class="price">Price: ₹200</div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </section>
+        <section class="products">
+            <div class="product">
+                <div class="image-slider">
+                    <img src="https://m.media-amazon.com/images/I/61rHRMN4fIL.jpg" alt="Temperature Sensor Image 1"
+                        class="image-slide">
+                    <img src="https://cdn2.botland.store/66532-large_default/gravity-analog-electrical-conductivity-sensor-dfrobot-dfr0300-h.jpg"
+                        alt="Temperature Sensor Image 2" class="image-slide">
+                </div>
+                <h2>Conductivity Sensors</h2>
+                <p>Electronic based sensor that measure electrical conductivity.</p>
+                <div class="price">Price: ₹2200</div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </section>
+        <section class="products">
+            <div class="product">
+                <div class="image-slider">
+                    <img src="https://pub.mdpi-res.com/jimaging/jimaging-07-00217/article_deploy/html/images/jimaging-07-00217-g005.png?1634614902"
+                        alt="Temperature Sensor Image 1" class="image-slide">
+                    <img src="https://media.infratec.eu/infrared-camera-infratec-imageir-5300.png?mp_enc=YXV0bz1jb21wcmVzcyZmaXQ9bWF4JmZtPXdlYnAmaD0yODcmdz00MzAmbXBfZGlyPTY1MTY3Jm1wX2lkPTE2Nzg3MTY4NTU="
+                        alt="Temperature Sensor Image 2" class="image-slide">
+                </div>
+                <h2>Aerial Drone</h2>
+                <p>Drone based sensor for detection of temperature.</p>
+                <div class="price">Price: 220</div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </section>
+        <section class="products">
+            <div class="product">
+                <div class="image-slider">
+                    <img src="https://www.mouser.in/images/marketingid/2021/img/153351344.png?v=070223.0240"
+                        alt="Temperature Sensor Image 1" class="image-slide">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDGi3JKlkfFcCV2OO3Z8SaQy8eYkk7YUKQfw&s"
+                        alt="Temperature Sensor Image 2" class="image-slide">
+                </div>
+                <h2>LiDAR Drone</h2>
+                <p>Drone based sensor for creation of 3D map.</p>
+                <div class="price">Price:900</div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </section>
+        <section class="products">
+            <div class="product">
+                <div class="image-slider">
+                    <img src="https://www.ntsensors.com/wp-content/uploads/2023/05/precision_agriculture_sensor.jpg"
+                        alt="Temperature Sensor Image 1" class="image-slide">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTC-IqrioPZfGUoHMPsmOfhPnNAvuaY9g-JYQ&s"
+                        alt="Temperature Sensor Image 2" class="image-slide">
+                </div>
+                <h2>Precision Drone</h2>
+                <p>Drone based sensor for enhancing pollination.</p>
+                <div class="price">Price:3000</div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </section>
+        <section class="products">
+            <div class="product">
+                <div class="image-slider">
+                    <img src="https://robu.in/wp-content/uploads/2017/04/GP2Y1014AU0F-Compact-Optical-font-b-Dust-b-font-Sensor-Compatible-GP2Y1010AU0F-GP2Y1010AUOF-Smoke-font-b-Particle.jpg"
+                        alt="Temperature Sensor Image 1" class="image-slide">
+                    <img src="https://amt.copernicus.org/articles/12/1581/2019/amt-12-1581-2019-f01-web.png"
+                        alt="Temperature Sensor Image 2" class="image-slide">
+                </div>
+                <h2>Pollen Drone</h2>
+                <p>Drone based sensor for enhancing pollination.</p>
+                <div class="price">Price:590</div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </section>
+        <section class="products">
+            <div class="product">
+                <div class="image-slider">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaxBTUuYtmcsheVGjiRDvVF5LCIHI4l9t_CQ&s"
+                        alt="Temperature Sensor Image 1" class="image-slide">
+                    <img src="https://www.dronevolt.com/wp-content/uploads/2021/03/spray_autonome_v2_acc.png"
+                        alt="Temperature Sensor Image 2" class="image-slide">
+                </div>
+                <h2>Agricultural Drone</h2>
+                <p>Drone based sensor for applying pesticides.</p>
+                <div class="price">Price:400</div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </section>
+        <section class="products">
+            <div class="product">
+                <div class="image-slider">
+                    <img src="https://imgs.mongabay.com/wp-content/uploads/sites/20/2023/07/06132303/seeds-from-drone.jpg"
+                        alt="Temperature Sensor Image 1" class="image-slide">
+                    <img src="https://5.imimg.com/data5/SELLER/Default/2023/8/331235466/XX/RL/FT/94954033/10l-seed-spreader-drone-500x500.png"
+                        alt="Temperature Sensor Image 2" class="image-slide">
+                </div>
+                <h2>Seed Drone</h2>
+                <p>Drone based sensor for planting sensor.</p>
+                <div class="price">Price:280</div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <p> &copy;2024 Agro Sensor. All rights reserved.</p>
+        <p><a href="#privacy-policy">Privacy Policy</a> | <a href="#terms">Terms of Services</a></p>
+    </footer>
+</body>
+<script>
+    // Function to navigate to the selected option
+    function navigateToSection() {
+        var selectedValue = document.getElementById('product-database').value;
+        if (selectedValue) {
+            window.location.href = selectedValue;
+        }
+    }
+
+    // Show or hide the dropdown content on click of Product link
+    document.getElementById('product-link').addEventListener('click', function(event) {
+        event.preventDefault(); // Prevents the default link behavior
+        var dropdown = document.getElementById('dropdown-menu');
+        dropdown.classList.toggle('show'); // Toggle the visibility of the dropdown
+    });
+</script>
+
+<style>
+    /* Hide dropdown by default */
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: white;
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+        padding: 10px;
+    }
+
+    /* Show the dropdown when 'show' class is applied */
+    .dropdown-content.show {
+        display: block;
+    }
+
+    .nav-item-dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    /* Additional styling */
+    .sub-nav-select {
+        width: 200px;
+    }
+</style>
+
+
+</html>

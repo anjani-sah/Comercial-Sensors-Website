@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link rel="stylesheet" href="stylesp.css">
+</head>
+<body>
+
+<div class="detail-container">
+  <div class="image-column">
+    <div class="slider-container">
+     <div class="slider">
+        <img class="slide" src="LiDAR1.png" alt="Product Image 1">
+        <img class="slide" src="LiDAR2.png" alt="Product Image 2">
+    </div>
+	 <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+         <button class="next" onclick="changeSlide(1)">&#10095;</button>
+   </div>
+</div>
+    <div class="detail-info">
+        <h1>LiDAR Drone</h1>
+	 <p class="product-description"><B>Definition:</B>Our LiDAR (Light Detection and Ranging) Drone uses laser pulses to create detailed 3D maps of the landscape. It is ideal for mapping terrain, assessing crop canopies, and planning field operations.<br><br>
+<B>Use:</B> LiDAR drones help farmers with precision mapping of fields, assessing the structure and height of crop canopies, and planning effective irrigation and planting strategies. They provide accurate topographical data that is critical for optimizing farm operations.<br><br>
+<B>Significance:</B>The LiDAR Drone is crucial for detailed land assessment and planning. Its ability to create 3D maps enables farmers to understand their fields better, leading to more informed decisions about planting, irrigation, and crop management. This technology supports sustainable farming by optimizing land use and improving operational efficiency.</p>
+        <p class="product-price">
+	<sup class="price-superscript">Rs</sup>899  (-70%)
+	<sub class="price-subscript">M.R.P.:Rs2,999</sub><br>
+	Inclusive of all taxes<br>
+	EMI starts at Rs312 per month</p>
+       <ul class="product-features">
+            <li>Brand: Real Instruments</li>
+            <li>Material: Metals</li>
+            <li>Size: 3.2x1.4 </li>
+            <li>Manufactured-In: India</li>
+        </ul>
+        <button class="add-to-cart-btn" onclick="addToCart()">Add to Cart</button>
+    </div>
+</div>
+
+<script src="scriptp.js"></script>
+</body>
+</html>

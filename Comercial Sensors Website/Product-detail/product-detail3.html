@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link rel="stylesheet" href="stylesp.css">
+</head>
+<body>
+
+<div class="detail-container">
+  <div class="image-column">
+    <div class="slider-container">
+     <div class="slider">
+        <img class="slide" src="Temperature1.png" alt="Product Image 1">
+        <img class="slide" src="Temperature2.png" alt="Product Image 2">
+    </div>
+	 <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+         <button class="next" onclick="changeSlide(1)">&#10095;</button>
+   </div>
+</div>
+    <div class="detail-info">
+        <h1>Temperature and Humidity Sensor</h1>
+	 <p class="product-description"><B>Definition:</B>Our Temperature and Humidity Sensor measures ambient temperature and the amount of water vapor in the air. It combines a thermistor or thermocouple for temperature measurement with a capacitive or resistive element for humidity. <br><br>
+<B>Use:</B> This sensor monitors microclimate conditions within fields or greenhouses, providing crucial data on temperature and humidity levels necessary for managing crop growth, pest control, and livestock health.<br><br>
+<B>Significance:</B> Temperature and humidity significantly impact plant growth, pest and disease management. By keeping track of these conditions, our sensor helps farmers take proactive measures to maintain optimal growing environments, ensuring healthy crops and livestock.
+</p>
+        <p class="product-price">
+	<sup class="price-superscript">Rs</sup>899  (-70%)
+	<sub class="price-subscript">M.R.P.:Rs2,999</sub><br>
+	Inclusive of all taxes<br>
+	EMI starts at Rs312 per month</p>
+       <ul class="product-features">
+            <li>Brand: Real Instruments</li>
+            <li>Material: Metals</li>
+            <li>Size: 3.2x1.4 </li>
+            <li>Manufactured-In: India</li>
+        </ul>
+        <button class="add-to-cart-btn" onclick="addToCart()">Add to Cart</button>
+    </div>
+</div>
+
+<script src="scriptp.js"></script>
+</body>
+</html>

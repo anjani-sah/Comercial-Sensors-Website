@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart - Agro Tech</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            padding: 20px;
+        }
+
+        .cart-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        .cart-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+            align-items: center;
+        }
+
+        .cart-item span {
+            font-size: 18px;
+        }
+
+        .cart-item input {
+            width: 50px;
+            margin-left: 10px;
+            padding: 5px;
+        }
+
+        .remove-btn {
+            background-color: #ff4d4d;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .checkout-btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #0056b3;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        .checkout-btn:hover {
+            background-color: #003d80;
+        }
+
+        .empty-cart {
+            text-align: center;
+            font-size: 18px;
+            color: #666;
+        }
+
+        .total-price {
+            text-align: right;
+            font-size: 18px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cart-container">
+        <h2>Your Cart</h2>
+        <div id="cart-items">
+            <!-- Cart items will be listed here -->
+        </div>
+        <p class="total-price">Total: $<span id="total-price">0.00</span></p>
+        <button class="checkout-btn" onclick="checkout()">Checkout</button>
+    </div>
+
+    <script>
+        // Function to display cart items from localStorage
+        function displayCartItems() {
+            const cartItemsContainer = document.getElementById("cart-items");
+            const totalPriceEl = document.getElementById("total-price");
+
+            // Get cart from localStorage
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+            // If the cart is empty, display a message
+            if (cart.length === 0) {
+                cartItemsContainer.innerHTML = '<p class="empty-cart">Your cart is empty</p>';
+                totalPriceEl.innerText = "0.00";
+                return;
+            }
+
+            // Clear the current content
+            cartItemsContainer.innerHTML = '';
+            let totalPrice = 0;
+
+            // Loop through cart items and display them
+            cart.forEach((item, index) => {
+                const cartItemDiv = document.createElement("div");
+                cartItemDiv.className = "cart-item";
+                cartItemDiv.innerHTML = `
+                    <span>${item.name}</span>
+                    <span>$${item.price.toFixed(2)} x <input type="number" min="1" value="${item.quantity}" onchange="updateQuantity(${index}, this.value)">
+                    </span>
+                    <button class="remove-btn" onclick="removeFromCart(${index})">Remove</button>
+                `;
+                cartItemsContainer.appendChild(cartItemDiv);
+
+                // Calculate total price
+                totalPrice += item.price * item.quantity;
+            });
+
+            totalPriceEl.innerText = totalPrice.toFixed(2);
+        }
+
+        // Function to update quantity
+        function updateQuantity(index, quantity) {
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+            if (quantity < 1) {
+                quantity = 1; // Prevent quantity from being less than 1
+            }
+
+            cart[index].quantity = parseInt(quantity);
+            localStorage.setItem('cart', JSON.stringify(cart));
+            displayCartItems(); // Refresh the cart display
+        }
+
+        // Function to remove an item from the cart
+        function removeFromCart(index) {
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            cart.splice(index, 1); // Remove item at the specified index
+            localStorage.setItem('cart', JSON.stringify(cart));
+            displayCartItems(); // Refresh the cart display
+        }
+
+        // Function to handle checkout (you can customize this with actual payment or redirection logic)
+        function checkout() {
+            alert("Checkout successful!");
+            localStorage.removeItem('cart'); // Clear the cart
+            window.location.href = "index.html"; // Redirect to another page
+        }
+
+        // Display the cart items when the page loads
+        document.addEventListener("DOMContentLoaded", displayCartItems);
+    </script>
+</body>
+
+</html>

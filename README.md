@@ -411,5 +411,4 @@ Potential improvements include:
 Developed by **Anjani Sah** as a web and database project focused on commercial agricultural sensors, IoT technologies, and smart farming solutions.
 
 ## Repository
-
-urlComercial-Sensors-Website on GitHubhttps://github.com/anjani-sah/Comercial-Sensors-Website
+Comercial-Sensors-Website on GitHubhttps://github.com/anjani-sah/Comercial-Sensors-Website
